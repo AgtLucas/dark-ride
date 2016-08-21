@@ -19,7 +19,7 @@ class AsyncApp extends Component {
 
   componentWillReceiveProps (nextProps) {
     if (nextProps.selectedSubreddit !== this.props.selectedSubreddit) {
-      const { dispatch, selectedSubreddit } = this.props
+      const { dispatch, selectedSubreddit } = nextProps
       dispatch(fetchPostsIfNeeded(selectedSubreddit))
     }
   }

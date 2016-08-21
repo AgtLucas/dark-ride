@@ -5,6 +5,6 @@ import { render } from 'react-dom'
 import Root from './containers/Root'
 
 render(
-  <h1>FOO!</h1>,
+  <Root />,
   document.getElementById('_root')
 )
